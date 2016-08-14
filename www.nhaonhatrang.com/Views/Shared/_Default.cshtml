@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/default_style.css" rel="stylesheet" />
+    <link href="~/Content/home_style.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/menu_dropdow.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="header_top">
+            <a id="dang_ky" href="#">Đăng ký</a>
+            <a id="dang_nhap" href="#">Đăng nhập</a>
+        </div>
+    </div>
+    <div class="header_default">
+        <div class="header_left"></div>
+        <div class="header_right"></div>
+    </div>
+    <div class="menu_background">
+        <div id="menubar" class="menu">
+            <ul>
+                <li><a class="menu_home_active" href="@Url.Action("Home", "Default")"></a></li>
+                <li>
+                    <a class="menu_item" href="#">BĐS bán</a>
+                    <ul>
+                        <li><a href="@Url.Action("BanCanHoChungCu", "Default")">Bán căn hộ chung cư</a></li>
+                        <li><a href="#">Bán nhà riêng</a></li>
+                        <li><a href="#">Bán nhà biệt thự, liền kề</a></li>
+                        <li><a href="#">Bán nhà mặt phố</a></li>
+                        <li><a href="#">Bán đất nền dự án</a></li>
+                        <li><a href="#">Bán đất</a></li>
+                        <li><a href="#">Bán trang trại, khu nghĩ dưỡng</a></li>
+                        <li><a href="#">Bán loại bất động sản khác</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="menu_item" href="#">BĐS cho thuê</a>
+                    <ul>
+                        <li><a href="#">Cho thuê căn hộ chung cư</a></li>
+                        <li><a href="#">Cho thuê nhà riêng</a></li>
+                        <li><a href="#">Cho thuê nhà mặt phố</a></li>
+                        <li><a href="#">Cho thuê văn phòng</a></li>
+                        <li><a href="#">Cho thuê phòng</a></li>
+                        <li><a href="#">Cho thuê cửa hàng, ki ốt</a></li>
+                        <li><a href="#">Cho thuê kho, nhà xưởng, đất</a></li>
+                        <li><a href="#">Cho thuê loại bất động sản khác</a></li>
+                    </ul>
+                </li>
+                <li><a class="menu_item" href="#">Tin tức</a></li>
+                <li><a class="menu_item" href="#">Thiết kế kiến trúc</a></li>
+                <li><a class="menu_item" href="#">Không gian sống</a></li>
+                <li><a class="menu_item" href="#">Phong thủy</a></li>
+                <li><a class="menu_item" href="#">Dự án</a></li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
